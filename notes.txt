@@ -20,7 +20,9 @@ ANS : Due to above scenerio a difference between staging area and working direct
     What git reset do : 
         Remove <file> from the staging area, but leave the working directory unchanged. 
         This unstages a file without overwriting any changes.
-7. How to see differences between staging area and working directory files?
-ANS : 'git diff'
+7. How to see differences between different area/directory files?
+ANS : 'git diff' => Show unstaged changes between your index and working directory
+      'git diff --staged'  => show uncommit changes between your staging and commit directory
+      'git diff head' => Show uncommit changes between your commit and working directory
 
 Note: ls command is used to see list of file in linux.
