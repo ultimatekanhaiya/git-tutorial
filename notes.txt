@@ -1,0 +1,26 @@
+1.There are two ways to use git in an project
+    1. Creat project on local machine and use 'git init'.
+    2. Create repository online and clone that into ur local system.
+
+2. How git works internally?
+3. what is rebase?
+4. what is stash?
+5. How to unstage changes?
+ANS : git rm --cached <file>
+
+6. What happen if we stage a file and make change in working directory to same file after staging?
+ANS : Due to above scenerio a difference between staging area and working directory file will arise due to 
+    which we will not be able to unstage the file by using 'git rm --cached <file>'.
+    Now we have three options:
+    1. Whatever new changes we have in working directory file will be copied to staging area file.
+    This can be done by again staging that file by using 'git add <file>'
+    2. Discard the changes in working directory file so that it can be similar to that of staging area file.
+    by using 'git restore <file>'
+    3.Unstage the file from staging area by using 'git reset <file>'
+    What git reset do : 
+        Remove <file> from the staging area, but leave the working directory unchanged. 
+        This unstages a file without overwriting any changes.
+7. How to see differences between staging area and working directory files?
+ANS : 'git diff'
+
+Note: ls command is used to see list of file in linux.
