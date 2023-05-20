@@ -25,4 +25,7 @@ ANS : 'git diff' => Show unstaged changes between your index and working directo
       'git diff --staged'  => show uncommit changes between your staging and commit directory
       'git diff head' => Show uncommit changes between your commit and working directory
 
+8. how to delete staged file forcefully?
+    'git rm -f <file>'
+    
 Note: ls command is used to see list of file in linux.
